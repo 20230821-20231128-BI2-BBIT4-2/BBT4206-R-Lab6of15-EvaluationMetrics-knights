@@ -9,6 +9,7 @@ if (require("languageserver")) {
                    repos = "https://cloud.r-project.org")
 }
 
+
 # STEP 1. Install and Load the Required Packages ----
 ## ggplot2 ----
 if (require("ggplot2")) {
