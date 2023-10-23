@@ -1,7 +1,7 @@
 Business Intelligence Project
 ================
-<Peter David Aringo>
-\<17/10/2023\>
+Peter David Aringo
+17/10/2023
 
 - [Student Details](#student-details)
 
