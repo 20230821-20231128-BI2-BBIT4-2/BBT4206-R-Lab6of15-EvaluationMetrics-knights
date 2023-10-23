@@ -1,6 +1,6 @@
 ---
 title: "Business Intelligence Project"
-author: "Peter David Aringo"
+author: "Knights"
 date: "17/10/2023"
 output:
   github_document: 

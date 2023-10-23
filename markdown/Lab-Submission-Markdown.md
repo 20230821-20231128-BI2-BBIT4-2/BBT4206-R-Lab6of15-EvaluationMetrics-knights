@@ -1,6 +1,6 @@
 Business Intelligence Project
 ================
-Peter David Aringo
+Knights
 17/10/2023
 
 - [Student Details](#student-details)
