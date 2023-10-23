@@ -143,7 +143,6 @@ print(paste("MAE =", mae))
 
 # 3. Area Under ROC Curve ----
 ## 3.a. Load the dataset ----
-data(PimaIndiansDiabetes)
 library(readr)
 Customer_Churn <- read_csv("data/Customer Churn.csv")
 Customer_Churn$Churn <- ifelse(Customer_Churn$Churn == 0, "No", "Yes")
@@ -217,27 +216,6 @@ crop_model_cart <- train(label ~ ., data = Crop_recommendation, method = "rpart"
 ## 4.c. Display the Model's Performance ----
 
 print(crop_model_cart)
-
-# [OPTIONAL] **Deinitialization: Create a snapshot of the R environment ----
-# Lastly, as a follow-up to the initialization step, record the packages
-# installed and their sources in the lockfile so that other team-members can
-# use renv::restore() to re-install the same package version in their local
-# machine during their initialization step.
-# renv::snapshot() # nolint
-
-# References ----
-
-## Kuhn, M., Wing, J., Weston, S., Williams, A., Keefer, C., Engelhardt, A., Cooper, T., Mayer, Z., Kenkel, B., R Core Team, Benesty, M., Lescarbeau, R., Ziem, A., Scrucca, L., Tang, Y., Candan, C., & Hunt, T. (2023). caret: Classification and Regression Training (6.0-94) [Computer software]. https://cran.r-project.org/package=caret # nolint ----
-
-## Leisch, F., & Dimitriadou, E. (2023). mlbench: Machine Learning Benchmark Problems (2.1-3.1) [Computer software]. https://cran.r-project.org/web/packages/mlbench/index.html # nolint ----
-
-## National Institute of Diabetes and Digestive and Kidney Diseases. (1999). Pima Indians Diabetes Dataset [Dataset]. UCI Machine Learning Repository. https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database # nolint ----
-
-## Robin, X., Turck, N., Hainard, A., Tiberti, N., Lisacek, F., Sanchez, J.-C., Müller, M., Siegert, S., Doering, M., & Billings, Z. (2023). pROC: Display and Analyze ROC Curves (1.18.4) [Computer software]. https://cran.r-project.org/web/packages/pROC/index.html # nolint ----
-
-## Wickham, H., François, R., Henry, L., Müller, K., Vaughan, D., Software, P., & PBC. (2023). dplyr: A Grammar of Data Manipulation (1.1.3) [Computer software]. https://cran.r-project.org/package=dplyr # nolint ----
-
-## Wickham, H., Chang, W., Henry, L., Pedersen, T. L., Takahashi, K., Wilke, C., Woo, K., Yutani, H., Dunnington, D., Posit, & PBC. (2023). ggplot2: Create Elegant Data Visualisations Using the Grammar of Graphics (3.4.3) [Computer software]. https://cran.r-project.org/package=ggplot2 # nolint ----
 
 # **Required Lab Work Submission** ----
 ## Part A ----
